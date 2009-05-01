@@ -178,7 +178,7 @@ S3URL.prototype = {
 
   get asciiHost() {
     var host = "";
-    for (i = 0; i < this._host.length; i++) {
+    for (var i = 0; i < this._host.length; i++) {
       var c = this._host.charCodeAt(i);
       if (c > 0x7f) {
         host += "%" + c.toString(16);
